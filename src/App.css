@@ -1,0 +1,43 @@
+.login-wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  justify-content: flex-end;
+}
+.menu-wrap ul {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+}
+.input-wrap {
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  gap: 15px;
+}
+
+.search-input {
+  border: none;
+  border-bottom: 1px solid black;
+}
