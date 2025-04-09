@@ -1,15 +1,17 @@
 .login-wrap {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   padding: 20px;
+}
+.login-wrap div {
+  cursor: pointer;
 }
 
 .logo-wrap {
   display: flex;
   justify-content: center;
-
   align-items: center;
 }
 
@@ -20,9 +22,12 @@
   display: flex;
   align-items: center;
   gap: 60px;
-  justify-content: flex-end;
+  padding: 70px 0;
 }
 .menu-wrap ul {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
   gap: 35px;
@@ -31,6 +36,8 @@
   list-style: none;
 }
 .input-wrap {
+  position: absolute;
+  right: 0%;
   display: flex;
   flex-direction: row;
   padding-right: 20px;
@@ -40,4 +47,29 @@
 .search-input {
   border: none;
   border-bottom: 1px solid black;
+}
+
+/* @media screen and (max-width: 700px) {
+  .menu-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-wrap ul,
+  .input-wrap {
+    position: static;
+    transform: none;
+    justify-content: center;
+  }
+} */
+
+.product-img {
+  width: 100%;
+}
+
+.hover-grow {
+  transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05); /* hover 시 5% 확대 */
 }

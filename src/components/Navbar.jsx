@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router";
 const Navbar = () => {
   const menuList = [
     "여성",
@@ -11,13 +12,17 @@ const Navbar = () => {
     "아동",
     "H&M HOME",
     "Sale",
-    "지속가능성성",
+    "지속가능성",
   ];
+  let navigate = useNavigate();
+  const goToLogin = () => {
+    navigate("/login");
+  };
   return (
     <>
       <div className="login-wrap">
         <FontAwesomeIcon icon={faUser} />
-        <div>로그인</div>
+        <div onClick={goToLogin}>로그인</div>
       </div>
       <div className="logo-wrap">
         <img
