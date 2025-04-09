@@ -11,6 +11,9 @@ import PrivitRoute from "./route/PrivitRoute";
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
 
+  // useEffect(() => {
+  //   console.log(authenticate);
+  // }, [authenticate]);
   return (
     <>
       <Navbar />
